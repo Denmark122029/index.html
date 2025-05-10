@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denmark's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2980b9;
+      display: inline-block;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Hello! I'm Denmark B. Dizon who loves drawing, watching anime, and playing online games. I'm also passionate about music, and my dream is to graduate and succeed in life with my loved ones by my side.</p>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="card">
+      <ul>
+        <li>Watching Anime</li>
+        <li>Playing the guitar</li>
+        <li>Coding and creating side projects</li>
+        <li>Sketching</li>
+         <li>Playing online games</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+      <ul>
+        <li> <a href="https://api2.sololearn.com/v2/certificates/CC-Y3FILQHQ/image/png?t=638771222747515910"> Html<a></li>
+         <li> <a href="https://api2.sololearn.com/v2/certificates/CC-TMJFJTWG/image/png?t=638823063892802500"> CSS<a></li>
+         <li> <a href="https://api2.sololearn.com/v2/certificates/CC-JFF1SK3G/image/png?t=638823463432806860"> JavaScript<a></li>
+
+
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <form id="contactForm">
+        <label>Name:<br><input type="text" name="name" required></label><br><br>
+        <label>Email:<br><input type="email" name="email" required></label><br><br>
+        <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br><br>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formMessage"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Denmark Dizon Portfolio.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("formMessage").textContent = "Thanks for your message! I'll get back to you soon.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
